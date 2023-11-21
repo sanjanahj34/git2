@@ -1,0 +1,85 @@
+GITHUB is used to store code.(public repositry)
+gitbash --> private repositry
+
+Repositry:
+   Each and every user we will have our own repositry.
+     central repositry --> It is also called as master repositry.
+                           It is used to store the code.
+                           In this we cannot develop the code.
+
+dev 1-->1GB
+dev 200MB
+
+git init
+
+Bare repositry is a central depositry in gitbash.
+Nonbare repositry is user depositry in gitbash.
+
+Working directory : It is used to develop code in working directory.
+staging area : It is something all the files are available and ready to commit.
+local repositry : where all the files are stored in the repositry.
+
+If we want to use specific file use file name.
+If we want to use all the file then use dot(.)
+
+commit id : It will save the content in the local repositry.
+
+Each and every time if we do a new commit head will be pointing to the latest commit.
+
+untracked file : whenever we created a file in local repositry initially it is untracked.
+unmodified : whenever if we created a file in a local repositry and once we commit it then the file will move in unmodified state.
+modified : whenever if we created a file in local repositry and commit it and if we edit the commited file then the file state is in the modified state.
+
+what is git status?
+       Git status is a command which is used to display the state of the file.
+
+Gitbush command : It is used to push the command from local repositry to central repositry.
+
+Git pull command : It is a command which is used to pull the content from the central repositry and merge it in the  local repositry.
+
+git fetch command : It is a command which is used to git the content from the central repositry but it will not merge in the central repo.-->(I Q)
+ 
+  Every morning employee will do git pull.
+
+If we try to push the content from local to central if the content is not updated with the centralrepo then we will be facing the error.
+If the head is pointing another commit in central repo and if we are try to pull the content from local and the local head commit is pointing to another commit then there will be the conflict.
+
+Git branch : It is used to test any code which we are developing on day to day basis. once the testing is donce then we will merging in the master branch.
+if we want switch from one branch to another 
+ 
+GIT reset command : It is a command which is used to undo the changes in staging area ,local repositry and totally remove the file.
+
+git reset --soft 
+git reset --hard   --> which is remove it from the local report
+git reset --mixed  --> which is used to get local repositry to the working repositry
+If we want to get specific changes from central to local then we have to use git cherry-pick.
+
+command to delete a branch --> git branch -d <branchname >
+                             git branch --delete <branchname>
+
+pushing all the branch to github using the command --> git push --all
+
+git push origin -d <branchname> --> to delete the branch in github
+
+If you want to delete a branch which is not merged to the master then use the following command --> git branch -D <branchname>
+
+git stash command : git stash is a location where we can store  the content and get it back whenever required
+                   It is available in the staging area.(IQ)
+                   git slash apply or git slash pop
+
+git rebase : command used to arrange the project in proper order.
+
+How to configure gitbash to github?(HW)
+
+ssh(secure shell) : 229(port no.)
+
+
+ENVIRONMENT IN DEVOPS:
+	1)development
+	2)QA
+	3)production
+
+
+            
+
+
